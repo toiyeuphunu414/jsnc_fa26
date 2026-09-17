@@ -4,7 +4,8 @@ console.log("Đây là LAB 1");
 // var: ko dùng var
 let name = "kmsdev";
 name = "kmsdev123";
-const age = 19;
+let age = 19;
+age = 21;
 const diachi = "Thái Bình";
 const status = "HD";
 
@@ -12,3 +13,20 @@ console.log("Tên tôi là:", name);
 console.log("Tuổi: ", age);
 console.log("Địa chỉ: ", diachi);
 console.log("Trạng thái sinh viên: ", status);
+
+function sayHello(name) {
+  console.log("Xin chào", name);
+  return 10;
+}
+
+const a = 10;
+const b = 5;
+
+console.log("Tổng", a + b);
+console.log("Hiệu", a - b);
+console.log("Tích", a * b);
+console.log("Thương", a / b);
+
+sayHello("An");
+sayHello("Khang");
+sayHello("Chiến");
