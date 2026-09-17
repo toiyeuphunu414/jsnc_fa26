@@ -14,6 +14,8 @@ console.log("Tuổi: ", age);
 console.log("Địa chỉ: ", diachi);
 console.log("Trạng thái sinh viên: ", status);
 
+// 3
+
 const a = 10;
 const b = 5;
 
@@ -21,6 +23,8 @@ console.log("Tổng", a + b);
 console.log("Hiệu", a - b);
 console.log("Tích", a * b);
 console.log("Thương", a / b);
+
+// 4
 
 function sayHello(name) {
   console.log("Xin chào", name);
