@@ -33,13 +33,14 @@ Bạn ${age1} tuổi
 Ngành: ${major1}`;
 console.log(info1);
 
-
 const student1 = {
     idd: 1,
     name1: "Nguyễn Đại Khang",
     age1: 20,
     major: "Lập trình Web",
 };
+
+console.log(student1);
 
 const mystudent1 = `Mã sinh viên: ${student1.idd}
 Họ và tên: ${student1.name1}
