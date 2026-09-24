@@ -28,7 +28,9 @@ const name1 = "Nguyễn Đại Khang";
 const age1 = 20;
 const major1 = "Lập trình Web";
 
-const info1 = `Xin chào ${name1} Bạn ${age1} tuổi Ngành: ${major1}`;
+const info1 = `Xin chào ${name1}
+Bạn ${age1} tuổi
+Ngành: ${major1}`;
 console.log(info1);
 
 
@@ -39,5 +41,8 @@ const student1 = {
     major: "Lập trình Web",
 };
 
-const mystudent1 = `Mã sinh viên: ${student1.idd} Họ và tên: ${student1.name1} Tuổi: ${student1.age1} Ngành: ${student1.major}`;
+const mystudent1 = `Mã sinh viên: ${student1.idd}
+Họ và tên: ${student1.name1}
+Tuổi: ${student1.age1}
+Ngành: ${student1.major}`;
 console.log(mystudent1);
