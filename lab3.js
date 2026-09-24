@@ -11,9 +11,9 @@ Tuổi: ${age}`;
 console.log(myname);
 
 const student = {
-    id: 1,
-    name: "Nguyễn Văn An",
-    age: 19,
+  id: 1,
+  name: "Nguyễn Văn An",
+  age: 19,
 };
 
 const studentinfo = `Mã sinh viên: ${student.id}
@@ -22,62 +22,7 @@ Tuổi: ${student.age}`;
 
 console.log(studentinfo);
 
-const arr = [
-  {
-    id: 1,
-    name: "Nguyễn Văn An",
-    age: 20,
-  },
-];
-
-const arrInfo = `${arr[0].name}`;
-console.log(arrInfo);
-
-// const html = `
-//   <div>
-//     <h3>${student.name}</h3>
-//     <p>Mã: ${student.id}</p>
-//     <p>Tuổi: ${student.age}</p>
-//   </div>
-// `;
-// document.getElementById("app").innerHTML = html;
-
-function add(a, b) {
-  return a + b;
-}
-// arrow function
-const add2 = (a, b) => {
-  return a + b;
-};
-
-const add3 = (a, b) => a + b; // return a + b
-console.log(add2(3, 4));
-console.log(add2(6, 4));
-
-// map
-const students = [
-  { id: 1, name: "An" }, // item
-  { id: 2, name: "Bình" }, // item
-  { id: 3, name: "Cường" }, // item
-];
-
-const mapInfo = students.map((item) => {
-  console.log(item);
-  return `ID: ${item.id} - Ten: ${item.name}`;
-});
-
-const html = students.map((student) => {
-  return `
-    <tr>
-      <td>${student.id}</td>
-      <td>${student.name}</td>
-    </tr>
-  `;
-});
-console.log(html);
-document.getElementById("app").innerHTML = html;
-
-// Bài tập lab 3
+// bài tập 1
 
 const name1 = "Nguyễn Đại Khang";
 const age1 = 20;
@@ -88,11 +33,13 @@ Bạn ${age1} tuổi
 Ngành: ${major1}`;
 console.log(info1);
 
+// bài tập 2
+
 const student1 = {
-    idd: 1,
-    name1: "Nguyễn Đại Khang",
-    age1: 20,
-    major: "Lập trình Web",
+  idd: 1,
+  name1: "Nguyễn Đại Khang",
+  age1: 20,
+  major: "Lập trình Web",
 };
 
 console.log(student1);
@@ -102,3 +49,48 @@ Họ và tên: ${student1.name1}
 Tuổi: ${student1.age1}
 Ngành: ${student1.major}`;
 console.log(mystudent1);
+
+// bài tập 3
+
+function add(a, b) {
+  return a + b;
+}
+
+// arrow function
+
+const add2 = (a, b) => {
+  return a + b;
+};
+
+console.log(add2(3, 4));
+
+// bài tập 4
+
+const square = (Number) => {
+  return Number * Number;
+};
+
+console.log(square(5));
+
+// tính tổng
+
+const sum = (a, b) => {
+  return a + b;
+};
+
+console.log(sum(10, 20));
+
+const sayhello = (name) => {
+  return `Xin chào ${name}`;
+};
+
+console.log(sayhello("Chiến"));
+
+// bài tập 5
+
+const numbers = [1, 2, 3, 4, 5];
+const newnumbers = numbers.map((numbers) => {
+  return numbers * 2;
+});
+
+console.log(newnumbers);
