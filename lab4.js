@@ -35,9 +35,9 @@ axios.get("http://localhost:3000/products").then((res) => {
   console.log("tien cua toi dau", res.data);
   document.getElementById("list").innerHTML = res.data
     .map(
-      (item) => `
+      (item, index) => `
          <tr class="hover:bg-gray-50">
-         <td class="px-4 py-2 border border-gray-300">${item.stt}</td>
+         <td class="px-4 py-2 border border-gray-300">${index + 1}</td>
               <td class="px-4 py-2 border border-gray-300">${item.id}</td>
               <td class="px-4 py-2 border border-gray-300">${item.name}</td>
               <td class="px-4 py-2 border border-gray-300">${item.price}</td>
