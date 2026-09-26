@@ -1,16 +1,19 @@
 {
   "products": [
     {
+        "stt": 1,
       "id": 1,
       "name": "iPhone 15",
       "price": 25000000
     },
     {
+        "stt": 2,
       "id": 2,
       "name": "Samsung S25",
       "price": 22000000
     },
     {
+        "stt": 3,
       "id": 3,
       "name": "Xiaomi 15",
       "price": 18000000
