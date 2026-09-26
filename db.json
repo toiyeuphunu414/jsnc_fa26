@@ -2,20 +2,20 @@
   "students": [
     {
       "id": 1,
-      "name": "Nguyễn Văn A",
+      "name": "Nguyễn Đại Khang",
       "age": 20,
-      "email": "a@gmail.com"
+      "email": "khang@gmail.com"
     },
     {
-      "name": "hoadv",
+      "name": "Nguyễn Đình Chiến",
       "age": 35,
-      "email": "hoadv@gmail.com",
+      "email": "chien@gmail.com",
       "id": 2
     },
     {
-      "name": "hoadv",
+      "name": "Huy Phúc",
       "age": 35,
-      "email": "hoadv@gmail.com",
+      "email": "phuc@gmail.com",
       "id": 3
     }
   ]
