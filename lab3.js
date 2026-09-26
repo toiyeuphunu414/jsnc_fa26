@@ -22,6 +22,47 @@ Tuổi: ${student.age}`;
 
 console.log(studentinfo);
 
+// map
+
+// const mapInfo = students.map((item) => {
+//   console.log(item);
+//   return `ID: ${item.id} - Ten: ${item.name}`;
+// });
+
+const students = [
+  { id: 1, name: "An", age: 22 },
+  { id: 2, name: "Bình", age: 33 },
+  { id: 3, name: "Cường", age: 34 },
+];
+
+document.getElementById("students").innerHTML = students
+  .map(
+    (student) => `
+     <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border border-gray-300">${student.id}</td>
+              <td class="px-4 py-2 border border-gray-300">${student.name}</td>
+              <td class="px-4 py-2 border border-gray-300">${student.age}</td>
+              <td class="px-4 py-2 border border-gray-300">
+                <div class="flex items-center justify-center gap-2">
+                  <a
+                    href="#"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+                  >
+                    Edit
+                  </a>
+
+                  <button
+                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </td>
+            </tr>
+            `,
+  )
+  .join("");
+
 // bài tập 1
 
 const name1 = "Nguyễn Đại Khang";
