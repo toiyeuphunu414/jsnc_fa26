@@ -3,18 +3,18 @@
     {
       "id": 1,
       "name": "Nguyễn Đại Khang",
-      "age": 20,
+      "age": 18,
       "email": "khang@gmail.com"
     },
     {
       "name": "Nguyễn Đình Chiến",
-      "age": 35,
+      "age": 19,
       "email": "chien@gmail.com",
       "id": 2
     },
     {
       "name": "Huy Phúc",
-      "age": 35,
+      "age": 20,
       "email": "phuc@gmail.com",
       "id": 3
     }

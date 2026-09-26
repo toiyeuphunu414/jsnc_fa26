@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "db": "json-server --watch db.json --port 3000"
+    "db2": "json-server --watch db2.json --port 3000"
   },
   "dependencies": {
     "json-server": "^0.17.4"
