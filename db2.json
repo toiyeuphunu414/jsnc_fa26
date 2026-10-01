@@ -143,6 +143,47 @@
       "category": "Phụ kiện",
       "brand": "Anker",
       "stock": 20
+    },
+    {
+      "name": "kmsdev",
+      "price": "50000000",
+      "id": 21
+    },
+    {
+      "name": "kmsdev",
+      "price": "5000000",
+      "email": "nguyendaikhang2000@gmail.com",
+      "id": 22
+    },
+    {
+      "name": "chien123",
+      "price": "1000000",
+      "email": "chien@gmail.com",
+      "id": 23
+    },
+    {
+      "name": "kmsdev",
+      "price": "111111111111",
+      "email": "nguyendaikhang2000@gmail.com",
+      "id": 24
+    },
+    {
+      "name": "kmsdev",
+      "price": "1111111111",
+      "email": "nguyendaikhang2000@gmail.com",
+      "id": 25
+    },
+    {
+      "name": "kmsdev",
+      "price": "111111111",
+      "email": "nguyendaikhang2000@gmail.com",
+      "id": 26
+    },
+    {
+      "name": "nhung",
+      "price": "500000",
+      "email": "nhung@gmail.com",
+      "id": 27
     }
   ]
 }
