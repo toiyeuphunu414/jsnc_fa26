@@ -61,7 +61,7 @@ axios.get("http://localhost:3000/products").then((res) => {
     .join("");
 });
 
-// Tìm kiếm
+// tìm kiếm
 document.getElementById("btn").addEventListener("click", () => {
   let keyword = document.getElementById("timkiem").value;
 
