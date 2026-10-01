@@ -22,6 +22,15 @@ document.getElementById("form-add").addEventListener("submit", (event) => {
     alert("Vui long nhap email");
     return;
   }
+
+  //   if (!/^\d{10}$/.test(price)) {
+  //     alert("So dien thoai phai co 10 so");
+  //   }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert("Dinh dang email khong hop le");
+    return;
+  }
   axios
     .post("http://localhost:3000/products", newstudent)
     .then(() => {
