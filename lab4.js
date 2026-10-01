@@ -47,7 +47,9 @@ axios.get("http://localhost:3000/products").then((res) => {
               <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">
                 Sửa
               </button>
-              <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">
+              <button 
+              onclick=deletestudent("${item.id}")
+              class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">
                 Xóa
               </button>
             </div>
@@ -59,8 +61,8 @@ axios.get("http://localhost:3000/products").then((res) => {
 });
 
 // Tìm kiếm
-document.getElementById("searchBtn").addEventListener("click", () => {
-  let keyword = document.getElementById("searchInput").value;
+document.getElementById("btn").addEventListener("click", () => {
+  let keyword = document.getElementById("timkiem").value;
 
   axios
     .get(`http://localhost:3000/products?name_like=${keyword}`)
@@ -80,7 +82,8 @@ document.getElementById("searchBtn").addEventListener("click", () => {
                   <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">
                     Sửa
                   </button>
-                  <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">
+                  <button 
+                  class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">
                     Xóa
                   </button>
                 </div>
@@ -91,3 +94,18 @@ document.getElementById("searchBtn").addEventListener("click", () => {
         .join("");
     });
 });
+
+function deletestudent(id) {
+  const result = confirm("Xoa hay khong?");
+  console.log(result);
+  if (result) {
+    axios
+      .delete(`http://localhost:3000/products/${id}`)
+      .then(() => {
+        alert("Xoa thanh cong");
+      })
+      .catch(() => {
+        alert("Xoa that bai");
+      });
+  }
+}
